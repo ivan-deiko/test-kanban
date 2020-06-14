@@ -1,0 +1,152 @@
+.main
+  position: relative
+  color: #ffffff
+  
+  .main-add-card
+    position: absolute
+    top: 55px
+    left: calc( 50% - 60px )
+    background-color: $rose-white-color
+    border: 1px solid $grey-color
+    border-radius: 7px
+    height: 20px
+    width: 120px
+    outline: none
+    cursor: pointer
+    
+  .main-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $blue-color
+    height: 50px
+    width: 100%
+    padding: 10px 30px
+    border-bottom: 1px solid $grey-color
+    margin-bottom: 30px
+    
+    h1, h3 
+      margin: 0
+
+    .main-header-logo 
+      text-transform: uppercase
+      font-size: 40px
+      font-weight: 700
+
+    .main-info-user
+      display: flex
+      align-items: center
+
+      .main-header-logout
+        cursor: pointer
+        font-size: 17px
+        margin-left: 10px
+      
+      .main-header-logout:hover
+        color: #000
+
+
+  .main-container
+    display: flex
+    justify-content: center
+    padding-right: 20px
+
+    .column-cards
+      display: inline-flex
+      flex-direction: column
+      width: 25%
+      height: fit-content
+      margin-left: 20px
+      background-color: #35383f
+      border-radius: 10px
+
+      .column-header
+        display: flex
+        height: 50px
+        justify-content: space-between
+        align-items: center
+        color: $grey-color
+        padding: 0 10px
+        margin-bottom: 10px
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+      .column-header_0
+        background-color: orange
+
+      .column-header_1
+        background-color: $blue-color
+
+      .column-header_2
+        background-color: yellow
+
+      .column-header_3
+        background-color: green
+
+        .column-header-name
+          font-size: 19px
+          white-space: nowrap
+
+      .column-cards-list
+        width: 100%
+        padding: 0 10px
+
+        .cards-list
+          width: 100%
+          min-height: 120px
+          height: 100%
+
+          .card
+            position: relative
+            width: 100%
+            display: flex
+            flex-direction: column
+            padding: 10px
+            background-color: #2f3136
+            height: 120px
+            margin-bottom: 10px
+            border-radius: 10px
+
+            .card-delete 
+              outline: none
+              background: none
+              cursor: pointer
+              border: none
+              position: absolute
+              right: 0
+              top: 10px
+
+// media querry
+@media screen and (max-width: 900px)
+  .column-cards
+    .column-header
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      .column-header-name
+        margin: 0
+        margin-bottom: 5px
+
+@media (max-width: 580px)
+  .main
+    position: relative
+    color: #ffffff
+    .main-header
+      padding: 0 5px
+    .main-container
+      flex-wrap: wrap
+      padding-right: 0
+      .column-cards
+        margin-left: 0
+        margin-right: 15px
+        margin-bottom: 15px
+        width: 40%
+        .column-header
+          padding: 0
+
+      
+
+
+
+  
+  
